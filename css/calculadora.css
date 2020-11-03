@@ -32,13 +32,13 @@
   pointer-events: none;
 }
 .datos:after {
-  border-color: rgba(161, 217, 252, 0);
+  border-color: none;
   border-left-color: #e8fcff;
   border-width: 20px;
   margin-top: -20px;
 }
 .datos:before {
-  border-color: rgba(196, 230, 245, 0);
+  border-color: none;
   border-left-color: #c4e6f5;
   border-width: 21px;
   margin-top: -21px;
