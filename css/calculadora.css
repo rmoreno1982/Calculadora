@@ -12,7 +12,7 @@
   color: #4b2a79;
 }
 .datos {
-  background: rgb(232 249 255);
+  background: #e8fcff;
   border: solid 1px #c4e6f5;
   position: relative;
   border-radius: 20px;
@@ -33,7 +33,7 @@
 }
 .datos:after {
   border-color: rgba(161, 217, 252, 0);
-  border-left-color: rgb(232 249 255);
+  border-left-color: #e8fcff;
   border-width: 20px;
   margin-top: -20px;
 }
