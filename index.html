@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ministerio de Vivienda y Urbanismo / Calculadora De Refinanciamiento</title>
+<link rel="icon" type="image/png" href="images/favicon.ico" />
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/calculadora.css" rel="stylesheet">
+<link href="css/all.css" rel="stylesheet">
+</head>
+<body>
+<div class="calculadora">
+<div class="header-calcu p-4 d-flex">
+  <div><h2 class="mb-0">Calculadora De Refinanciamiento</h2>
+  <span>Ministerio de Vivienda y Urbanismo</span> </div>
+	<div class="ml-auto uf"> Valor de la U.F. al dia de hoy<br><strong>28855.33 Pesos</strong> </div>
+	
+	</div>
+<div class="container-fluid">
+	
+	<div class="alert alert-success mt-4">
+		  <h4 class="alert-heading">Importante!</h4>
+
+		Los cálculos que realizará a continuación, son referenciales, y tienen como objetivo que usted pueda estimar la conveniencia de refinanciar su crédito. El calculo del dividendo que emite la calculadora no contienen los seguros, estos valores definitivos serán entregados por la institución financiera. Para realizar el calculo, debe tener a mano lo siguiente: Meses restantes del crédito, Saldo actual de su crédito en UF, monto de su dividendo actual en pesos. En la segunda sección, deberá ingresar los datos del nuevo crédito: Monto del nuevo crédito en UF, la nueva tasa de interés separados los decimales con una coma, y el nuevo plazo expresado en meses. </div>
+	
+  <div class="row">
+    <div class="col col-sm-12 col-md-12 formulario">
+      <div class="page-header mb-4">
+        <h1>Calculadora Portabilidad Financiera MINVU</h1>
+      </div>
+		
+		<div class="row">
+			
+          <div class="col-md-8">
+		
+		<div class="datos pb-3">
+			<div class="row ">
+          <div class="col-md-6">
+      <div class="form-horizontal">
+        
+            <h2 class="title-seccion">Situación Actual de tu Crédito</h2>
+            <div class="form-group">
+              <label class="control-label">Meses restantes del crédito (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <input type="text" placeholder="Ej: 240" id="MesesxPagar" maxlength="3" class="form-control">
+              <small class="text-danger">Favor ingresar valor</small> </div>
+            <div class="form-group">
+              <label class="control-label">Cuánto me queda por pagar en U.F. (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <input type="text" placeholder="Ej: 1360" id="SaldoUF" maxlength="4" class="form-control">
+				<small class="text-danger">Favor ingresar valor</small>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Monto del dividendo en pesos (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <input type="text" placeholder="Ej: 255365" id="MontoDividendoPesos" maxlength="6" class="form-control">
+				<small class="text-danger">Favor ingresar valor</small>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Cuánto me queda por pagar en Pesos </label>
+              <input id="SaldoPesos" class="form-control" readonly>
+            </div>
+          
+      </div>
+			  </div>
+			
+		<div class="col-md-6">
+		<div class="form-horizontal">
+        
+            <h2 class="title-seccion">Condiciones del nuevo Crédito</h2>
+            <div class="form-group">
+              <label class="control-label">Monto del crédito a Refinanciar (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <input type="text" placeholder="Ej: 1360" id="MontoRefinanciar" maxlength="4" class="form-control">
+              <small class="text-danger">Favor ingresar valor</small> </div>
+            <div class="form-group">
+              <label class="control-label">Plazo del nuevo crédito (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <input type="text" placeholder="Ej: 240" id="PlazoCredito" maxlength="3" class="form-control">
+				<small class="text-danger">Favor ingresar valor</small>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Tasa de Interés (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <input type="text" placeholder="Ej: 2.85%" id="TasaInteres" class="form-control input-sm">
+				<small class="text-danger">Favor ingresar valor</small>
+            </div>
+            <div class="form-group">
+				 <div class="row">
+    <div class="col">
+              <label class="control-label">Dividendo a pagar en UF</label>
+				<input id="DividendoenUF" class="form-control" readonly>
+				
+		</div>
+		<div class="col">
+			 <label class="control-label">Dividendo a pagar en pesos</label>
+				<input id="DividendoenPesos" class="form-control" readonly>
+            </div>
+        </div>
+      </div>
+			  
+		</div>
+		</div>
+			<div class="col-md-12 text-center">
+			<hr>
+			<button type="button" class="btn btn-secondary">Limpiar</button> <button type="button" class="btn btn-success">Calcular</button>
+				</div>
+			</div>
+			</div>
+			  </div>
+		
+			
+			<div class="col-md-4 align-self-center">
+		<div class="form-horizontal resultado">
+        
+            <h2 class="title-seccion">Ahorro por Refinanciar Crédito</h2>
+            <div class="form-group">
+              <label class="control-label">Ahorro dividendo Mensual <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <input readonly id="AhorroDividendoMensual" class="form-control">
+              </div> 
+            <div class="form-group">
+              <label class="control-label">Ahorro total del crédito en Dividendos <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <input readonly id="AhorroDividendoTotal" class="form-control">
+				
+            </div>
+            
+          
+			  
+		</div>
+		</div>
+				</div>
+    </div>
+  </div>
+</div>
+</div>	
+	
+	
+	<div id="footer" class="mt-4">
+  <div class="container-fluid">
+    <div class="footer_top">
+      <div class="row">
+        <div class="col-md-2 logo mb-3"> <img src="images/logo-minvu.svg" alt="http://Minvu"> </div>
+        <div class="col-md-10 text-right">
+          <div class="contacto p-3"> MINVU ALO: <a href="tel:6009011111" class="fono1" title="Teléfono"><i class="fas fa-phone"></i> 600 901 11 11</a> <a href="tel:0229011111" class="fono1" title="Teléfono"><i class="fas fa-mobile-alt"></i> 02 2 901 11 11</a></div>
+          <ul class="redes">
+            <li>Síguenos</li>
+            <li> <a href="https://www.minvu.cl/contactenos/formulario-de-contacto/" title="Contacto"><i class="fab fas fa-envelope-square"></i></a> </li>
+            <li> <a href="https://twitter.com/Minvu" target="_blank" title="Twitter"><i class="fab fa-twitter-square"></i></a> </li>
+            <li> <a href="https://www.facebook.com/MinvuChile" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a> </li>
+            <li> <a href="https://www.youtube.com/user/Minvuchile" target="_blank" title="Youtube"><i class="fab fa-youtube-square"></i></a> </li>
+            <li> <a href="https://www.instagram.com/minvuchile/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a> </li>
+            <li> <a href="https://www.flickr.com/photos/minvu/sets/" target="_blank" title="Flickr"><i class="fab fa-flickr"></i></a> </li>
+          </ul>
+          <p class="text-light mb-2">Alameda 924, Santiago, Chile</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+</script>
+</body>
+</html>
