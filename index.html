@@ -46,21 +46,21 @@
         
             <h2 class="title-seccion">Situación Actual de tu Crédito</h2>
             <div class="form-group">
-              <label class="control-label">Meses restantes del crédito (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <label class="control-label">Meses restantes del crédito (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Ingresar la cantidad de meses que le queda por pagar"><i class="fas fa-question-circle"></i></a></label>
               <input type="text" placeholder="Ej: 240" id="MesesxPagar" maxlength="3" class="form-control">
               <small class="text-danger">Favor ingresar valor</small> </div>
             <div class="form-group">
-              <label class="control-label">Cuánto me queda por pagar en U.F. (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <label class="control-label">Cuánto me queda por pagar en U.F. (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Ingresar la cantidad en pesos del dividendo que paga actualmente"><i class="fas fa-question-circle"></i></a></label>
               <input type="text" placeholder="Ej: 1360" id="SaldoUF" maxlength="4" class="form-control">
 				<small class="text-danger">Favor ingresar valor</small>
             </div>
             <div class="form-group">
-              <label class="control-label">Monto del dividendo en pesos (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <label class="control-label">Monto del dividendo en pesos (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Ingresar la cantidad en pesos del dividendo que paga actualmente"><i class="fas fa-question-circle"></i></a></label>
               <input type="text" placeholder="Ej: 255365" id="MontoDividendoPesos" maxlength="6" class="form-control">
 				<small class="text-danger">Favor ingresar valor</small>
             </div>
             <div class="form-group">
-              <label class="control-label">Cuánto me queda por pagar en Pesos </label>
+              <label class="control-label">Cuánto me queda por pagar en Pesos <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Saldo actual del crédito en Pesos"><i class="fas fa-question-circle"></i></a></label>
               <input id="SaldoPesos" class="form-control" readonly>
             </div>
           
@@ -72,28 +72,28 @@
         
             <h2 class="title-seccion">Condiciones del nuevo Crédito</h2>
             <div class="form-group">
-              <label class="control-label">Monto del crédito a Refinanciar (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <label class="control-label">Monto del crédito a Refinanciar (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Ingresar el saldo actual del crédito en UF"><i class="fas fa-question-circle"></i></a></label>
               <input type="text" placeholder="Ej: 1360" id="MontoRefinanciar" maxlength="4" class="form-control">
               <small class="text-danger">Favor ingresar valor</small> </div>
             <div class="form-group">
-              <label class="control-label">Plazo del nuevo crédito (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <label class="control-label">Plazo del nuevo crédito (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Ingresa el plazo de tu crédito en meses"><i class="fas fa-question-circle"></i></a></label>
               <input type="text" placeholder="Ej: 240" id="PlazoCredito" maxlength="3" class="form-control">
 				<small class="text-danger">Favor ingresar valor</small>
             </div>
             <div class="form-group">
-              <label class="control-label">Tasa de Interés (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <label class="control-label">Tasa de Interés (*) <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Ingrese la tasa anual de interés, separado por una coma. Ejemplo 2,85"><i class="fas fa-question-circle"></i></a></label>
               <input type="text" placeholder="Ej: 2.85%" id="TasaInteres" class="form-control input-sm">
 				<small class="text-danger">Favor ingresar valor</small>
             </div>
             <div class="form-group">
 				 <div class="row">
     <div class="col">
-              <label class="control-label">Dividendo a pagar en UF</label>
+              <label class="control-label">Dividendo a pagar en UF <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Este seria el valor de su dividendo en UF, sin considerar los seguros."><i class="fas fa-question-circle"></i></a></label>
 				<input id="DividendoenUF" class="form-control" readonly>
 				
 		</div>
 		<div class="col">
-			 <label class="control-label">Dividendo a pagar en pesos</label>
+			 <label class="control-label">Dividendo a pagar en pesos <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Este sería el valor de tu dividendo en pesos, sin considerar los seguros."><i class="fas fa-question-circle"></i></a></label>
 				<input id="DividendoenPesos" class="form-control" readonly>
             </div>
         </div>
@@ -115,11 +115,11 @@
         
             <h2 class="title-seccion">Ahorro por Refinanciar Crédito</h2>
             <div class="form-group">
-              <label class="control-label">Ahorro dividendo Mensual <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <label class="control-label">Ahorro dividendo Mensual </label>
               <input readonly id="AhorroDividendoMensual" class="form-control">
               </div> 
             <div class="form-group">
-              <label class="control-label">Ahorro total del crédito en Dividendos <a class="ayuda-icono" data-container="body" data-toggle="popover" data-placement="right" data-content="Texto de ayuda"><i class="fas fa-question-circle"></i></a></label>
+              <label class="control-label">Ahorro total del crédito en Dividendos </label>
               <input readonly id="AhorroDividendoTotal" class="form-control">
 				
             </div>
